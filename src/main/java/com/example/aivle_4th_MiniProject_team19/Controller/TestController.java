@@ -1,22 +1,24 @@
 package com.example.aivle_4th_MiniProject_team19.Controller;
 
-import com.example.aivle_4th_MiniProject_team19.Entity.Book;
-import com.example.aivle_4th_MiniProject_team19.Repository.BookRepository;
-import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
+import java.time.LocalDateTime;
+import java.util.Map;
 
 @RestController
-@RequiredArgsConstructor
-@RequestMapping("/api/hello")
+@RequestMapping("/api/health")
 public class TestController {
 
     @GetMapping
-    private String getBookList() {
-        return "테스트 성공";
+    public ApiResponse<Map<String, Object>> checkHealth() {
+        Map<String, Object> payload = Map.of(
+                "status", "ok",
+                "message", "백엔드 API 연결 성공",
+                "timestamp", LocalDateTime.now().toString()
+        );
+
+        return ApiResponse.of(payload);
     }
 }
