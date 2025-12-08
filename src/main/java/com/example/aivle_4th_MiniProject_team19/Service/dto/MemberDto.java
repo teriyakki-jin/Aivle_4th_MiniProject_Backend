@@ -17,6 +17,11 @@ public class MemberDto {
 
     // Entity -> Dto
     public static MemberDto from(Member member) {
+
+        if (member == null) {
+            return null;
+        }
+
         return MemberDto.builder()
                 .username(member.getUsername())
                 .password(member.getPassword())

@@ -17,7 +17,8 @@ public class BookDetailDto {
     private String authorName;
     private String category;
     private String description;
-    private MemberDto memberDto;
+    private MemberDto member;
+    private ImageDto image;
 
     // Entity -> Dto
     public static BookDetailDto from(Book book) {
@@ -27,7 +28,8 @@ public class BookDetailDto {
                 .authorName(book.getAuthorName())
                 .category(book.getCategory())
                 .description(book.getDescription())
-                .memberDto(MemberDto.from(book.getMember()))
+                .member(MemberDto.from(book.getMember()))
+                .image(ImageDto.from(book.getImage()))
                 .build();
     }
 }
