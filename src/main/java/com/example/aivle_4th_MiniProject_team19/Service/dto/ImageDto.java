@@ -18,6 +18,11 @@ public class ImageDto {
 
     // Entity -> Dto
     public static ImageDto from(Image image) {
+
+        if (image == null) {
+            return null;
+        }
+
         return ImageDto.builder()
                 .originFileName(image.getOriginFileName())
                 .modifiedFileName(image.getModifiedFileName())
