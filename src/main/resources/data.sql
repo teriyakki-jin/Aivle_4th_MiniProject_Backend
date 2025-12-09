@@ -16,19 +16,19 @@ VALUES ('david', '1234', NULL, CURRENT_TIMESTAMP, NULL, CURRENT_TIMESTAMP);
 
 -- image
 INSERT INTO image (origin_file_name, modified_file_name, created_by, created_date, last_modified_by, last_modified_date)
-VALUES ('book1.jpg', 'book1_2025.jpg', NULL, CURRENT_TIMESTAMP, NULL, CURRENT_TIMESTAMP);
+VALUES ('book1.jpg', 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788964200377.jpg', NULL, CURRENT_TIMESTAMP, NULL, CURRENT_TIMESTAMP);
 
 INSERT INTO image (origin_file_name, modified_file_name, created_by, created_date, last_modified_by, last_modified_date)
-VALUES ('book2.jpg', 'book2_2025.jpg', NULL, CURRENT_TIMESTAMP, NULL, CURRENT_TIMESTAMP);
+VALUES ('book2.jpg', 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788966262281.jpg', NULL, CURRENT_TIMESTAMP, NULL, CURRENT_TIMESTAMP);
 
 INSERT INTO image (origin_file_name, modified_file_name, created_by, created_date, last_modified_by, last_modified_date)
-VALUES ('book3.jpg', 'book3_2025.jpg', NULL, CURRENT_TIMESTAMP, NULL, CURRENT_TIMESTAMP);
+VALUES ('book3.jpg', 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791158393519.jpg', NULL, CURRENT_TIMESTAMP, NULL, CURRENT_TIMESTAMP);
 
 INSERT INTO image (origin_file_name, modified_file_name, created_by, created_date, last_modified_by, last_modified_date)
-VALUES ('book4.jpg', 'book4_2025.jpg', NULL, CURRENT_TIMESTAMP, NULL, CURRENT_TIMESTAMP);
+VALUES ('book4.jpg', 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788992939850.jpg', NULL, CURRENT_TIMESTAMP, NULL, CURRENT_TIMESTAMP);
 
 INSERT INTO image (origin_file_name, modified_file_name, created_by, created_date, last_modified_by, last_modified_date)
-VALUES ('book5.jpg', 'book5_2025.jpg', NULL, CURRENT_TIMESTAMP, NULL, CURRENT_TIMESTAMP);
+VALUES ('book5.jpg', 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791162242742.jpg', NULL, CURRENT_TIMESTAMP, NULL, CURRENT_TIMESTAMP);
 
 -- book
 INSERT INTO book (title, author_name, category, description, member_id, image_id,
