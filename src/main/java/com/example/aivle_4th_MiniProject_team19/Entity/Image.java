@@ -4,16 +4,23 @@ import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Getter
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@Setter
+@NoArgsConstructor
 @Entity
 public class Image extends BaseEntity {
 
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "image_id")
     private Long id;
+
+
+    @Column(name = "origin_file_name")
     private String originFileName;
+
+    @Column(name = "modified_file_name")
     private String modifiedFileName;
 
     @OneToOne(mappedBy = "image")
